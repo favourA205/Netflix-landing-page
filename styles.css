@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -78,13 +79,11 @@ nav .signin-button:hover {
 
 .home-content .text-2 {
   margin: 20px 0;
-  font-size: 20px;
   color: white;
 }
 
 .home-content .text-3 {
   margin: 10px 0;
-  font-size: 18px;
   color: white;
 }
 
@@ -93,17 +92,15 @@ nav .signin-button:hover {
   justify-content: center;
   margin: 20px 0;
 }
+
 .home-content .signup-form form input {
-  height: 95%;
-  width: 100%;
+  padding: 15px 200px 15px 5px;
   border: 1px solid lightgrey;
-  outline: none;
-  padding-top: -2px;
-  padding-bottom: -2px;
-  padding-left: 70px;
-  padding-right: 70px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  border-radius: 2px;
+}
+
+.home-content .signup-form form input:hover {
+  border: 1px solid rgb(6, 215, 6);
 }
 
 .home .max-width {
@@ -111,19 +108,12 @@ nav .signin-button:hover {
 }
 
 .home-content .signup-form .signup-button {
-  font-size: 17px;
-  background: red;
+  padding: 15px 50px;
   text-decoration: none;
-  border: none;
+  color: white;
+  background: red;
   border-radius: 2px;
   cursor: pointer;
-  color: white;
-  text-align: center;
-  padding: 12px 30px;
-  display: flex;
-  align-self: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
 }
 
 .home-content .signup-form .signup-button:hover {
@@ -135,152 +125,158 @@ nav .signin-button:hover {
   color: white;
 }
 
-
-@media (max-width: 1250px) {
-  .home .text-1 {
-    font-size: 49px;
-    font-weight: 600;
-    margin: 0 330px;
-  }
-}
-
-@media (max-width: 1200px) {
-  nav .signin-button {
-    font-size: 15px;
-  }
-  .home .text-1 {
-    font-size: 38px;
-    font-weight: 600;
-    margin: 10px 300px;
-  }
-
-  .home .signup-form form input {
-    height: 95%;
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .home .signup-form .signup-button {
-    font-size: 18px;
-  }
-
-  .home .text-2 {
-    font-size: 17px;
-  }
-
-  .home .text-3 {
-    font-size: 16px;
-  }
-
-@media (max-width: 1024px) {
-  .home .text-1 {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 200px;
-  }
-  .home .text-2 {
-    font-size: 16px;
-    line-height: 17px;
-    letter-spacing: 1px;
-  }
-
-  .home .text-3 {
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-}
-
-@media (max-width: 760px) {
-  .home .text-1 {
-    font-size: 38px;
-    font-weight: 600;
-    margin: 10px 150px;
-  }
-
-
-  .home .text-2 {
-    margin: auto -8px;
-    line-height: 17px;
-    letter-spacing: 1px;
-  }
-
-  .home .text-3 {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  .home .signup-form form input {
-    height: 95%;
-    width: 100%;
-    margin: auto -4px;
-  }
-
-  .home .signup-form .signup-button {
-    font-size: 14px;
-    margin: auto -4px;
-  }
-}
-
-
-@media (max-width: 680px){
-  .home .text-1 {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 10px 60px;
-  }
-
-}
-@media (max-width: 480px) {
-  .home .max-width {
-    margin: auto 20px auto 20px;
-  }
-
-  .navbar .max-width {
-    margin: 0 15px;
-  }
-
+@media all and (max-width: 320px) {
   .navbar .logo a {
-    font-size: 23px;
+    font-size: 0.2rem;
     font-weight: 700;
   }
 
   nav .signin-button {
-    font-size: 13px;
-    padding: 12px 20px;
+    padding: 12px 12px;
+    font-size: 0.5rem;
   }
 
-  .home .text-1 {
-    font-size: 27px;
-    font-weight: 600;
-    margin: 7px 40px;
-  }
-  .home .text-2 {
-    font-size: 15px;
-    margin: auto -5px;
-    letter-spacing: 1px;
+  .home .max-width {
+    margin: auto 10px auto 10px;
   }
 
-  .home .text-3 {
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 1px;
+  .home-content .text-1 {
+    font-size: 1px;
+    margin: 10px -10px;
   }
 
-  .home-content h4 {
-    font-size: 15px;
+  .home-content .text-2 {
+    margin: 20px 0;
+    font-size: 20px;
+    color: white;
   }
 
-  .home .signup-form form input {
-    height: 95%;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    /* font-size: 13px; */
+  .home-content .text-3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+  }
+}
+
+@media all and (max-width: 1026px) {
+  .navbar .logo a {
+    font-size: 1.55rem;
+    font-weight: 700;
+  }
+
+  nav .signin-button {
+    padding: 12px 25px;
+    font-size: 0.89rem;
+  }
+
+  .home .max-width {
+    margin: auto 10px auto 10px;
+  }
+
+  .home-content .text-1 {
+    font-size: 2.6rem;
+    margin: 10px -10px;
+  }
+
+  .home-content .signup-form form input {
+    padding: 15px 190px 15px 5px;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .navbar .logo a {
+    font-size: 1.55rem;
+    font-weight: 700;
+  }
+
+  nav .signin-button {
+    padding: 12px 25px;
+    font-size: 0.89rem;
+  }
+
+  .home .max-width {
+    margin: auto 0;
+  }
+
+  .home-content .text-1 {
+    font-size: 2.4rem;
+    margin: 5px -20px;
+  }
+
+  .home-content .signup-form form input {
+    padding: 15px 120px 15px 5px;
   }
 
   .home-content .signup-form .signup-button {
-    font-size: 15px;
-    padding: 3px 18px;
-    font-weight: 100;
+    padding: 15px 15px;
+    font-size: 0.74rem;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar .logo a {
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  nav .signin-button {
+    padding: 12px 20px;
+    font-size: 0.83rem;
+  }
+
+  .home .max-width {
+    margin: auto 7px auto 7px;
+  }
+
+  .home-content .text-1 {
+    font-size: 2.1rem;
+    margin: 10px -10px;
+  }
+
+  .home-content .text-3 {
+    font-size: 0.86rem;
+  }
+
+  .home-content .signup-form form input {
+    padding: 15px 80px 15px 5px;
+  }
+
+  .home-content .signup-form .signup-button {
+    padding: 15px 10px;
+    font-size: 0.74rem;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  nav .signin-button {
+    padding: 12px 19px;
+    font-size: 0.81rem;
+  }
+
+  .home .max-width {
+    margin: auto 6px auto 6px;
+  }
+
+  .home-content .text-1 {
+    font-size: 1.8rem;
+    margin: 10px -10px;
+  }
+
+  .home-content .text-3 {
+    font-size: 0.82rem;
+  }
+
+  .home-content .signup-form form input {
+    padding: 12px 60px 12px 5px;
+  }
+
+  .home-content .signup-form .signup-button {
+    padding: 12px 8px;
+    font-size: 0.6rem;
   }
 }
